@@ -194,12 +194,58 @@ MySQL database information:
 
  Password: cloudera
 
+```
+sqoop export --connect jdbc:mysql://localhost/problem8 --username cloudera --password cloudera --export-dir /user/training/problem8/data/customer --table solution --input-fields-terminated-by '\t'
+```
 
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-8-1.PNG?raw=true)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### 9.
 
+### Instructions
+
+Your company is being acquired by another company. To prepare for this acquisition, update the customer records to guarantee there will be no duplicate IDs with their existing customer IDs.
+
+### Data Description
+
+The customer records are stored in the customer table in the problem9 database. The id column is a unique identifier for that record.
+
+Create Table solution:
+
+```
+CREATE TABLE solution
+(
+	  id STRING,
+	  fname STRING,
+	  lname STRING,
+	  address STRING,
+	  city STRING,
+	  state STRING,
+	  zip STRING,
+	  birthday STRING
+)
+```
+
+Insert Into:
+
+```
+INSERT INTO TABLE solution
+SELECT CONCAT('A', id),
+	     fname,
+	     lname,
+	     address,
+	     city,
+	     state,
+	     zip,
+	     birthday
+  FROM customer;
+```
+
+Sample Output:
+
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-9-result.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### 10.
