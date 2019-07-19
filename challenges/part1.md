@@ -28,21 +28,35 @@ for this)
 ```
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-ii.Instances.PNG?raw=true)
 
-
 iii. List the Linux release you are using
 ```
 $ cat /etc/redhat-release
 ```
-
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-iii.LinuxRelease.PNG?raw=true)
 
 iv. List the file system capacity for the first node (master node)
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-iv.file_system_capacity_for_the_first_node.PNG?raw=true)
 
 v. List the command and output for yum repolist enabled
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-v.yum_repolist.PNG?raw=true)
 
 vi. List the /etc/passwd entries for training (only in master name node)
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-vi.etc_passwd_entries_for_training.PNG?raw=true)
 
 vii. List the /etc/group entries for skcc (only in master name node)
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-vii.etc_group_entries_for_skcc.PNG?raw=true)
 
 viii. List output of the flowing commands:
 1. getent group skcc
 2. getent passwd training
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-viii.getent.PNG?raw=true)
+
+
+
+
+
+
+
+
+
+
