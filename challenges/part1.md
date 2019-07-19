@@ -1,4 +1,4 @@
 # SK C&C Big Data Knowledge Test
-## <Part I>
+## Part I
 
-###1. Create a CDH Cluster on AWS
+### 1. Create a CDH Cluster on AWS
