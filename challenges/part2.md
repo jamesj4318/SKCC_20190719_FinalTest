@@ -61,6 +61,8 @@ CREATE EXTERNAL TABLE solution
     LOCATION '/user/training/problem2/data/employee'
 ```
 
+Sample Output:
+
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-2.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -89,6 +91,39 @@ Sample Output:
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### 4.
+
+### Instructions
+
+LoudAcre Mobile has merged with another company located in California. Each company has a list of customers in different formats. Combine the two customer lists into a single dataset using an identical schema.
+
+### Data Description
+The original customer data exists in the HDFS directory /user/training/problem4/data/employee1/. It contains expanded, nine-digit zip codes. The new files are in the HDFS directory /user/training/problem4/data/employee2/. It contains last names before first names, both using all capital letters.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+### 5.
+
+### Instructions
+
+The bank is making a Facebook group for the Palo Alto, CA branch. Generate a script that outputs the customers and employees who live in Palo Alto, CA.
+
+### Data Description
+
+The employee records are stored in the employee metastore table in the problem5 database, The customer records are stored in the customer metastore table in the problem5 database.
+
+```
+SELECT C.fname, C.lname, C.city, C.state
+  FROM customer C
+ WHERE C.city = 'Palo Alto'
+   AND C.state = 'CA'
+ UNION ALL
+SELECT E.fname, E.lname, E.city, E.state
+  FROM employee E
+ WHERE E.city = 'Palo Alto'
+   AND E.state = 'CA'
+```
+
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-5.PNG?raw=true)
+
 
 
 
