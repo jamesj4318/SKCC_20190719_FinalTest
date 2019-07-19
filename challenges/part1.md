@@ -3,7 +3,9 @@
 
 ### 1. Create a CDH Cluster on AWS
 a. Linux setup
+
 i. Add the following linux accounts to all nodes
+
 1. User training with a UID of 3800
 2. Set the password for user “training” to “training”
 3. Create the group skcc and add training to it
