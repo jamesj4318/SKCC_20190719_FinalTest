@@ -92,6 +92,7 @@ iv. In you cluster, create a user named “training” with password “training
 ----------------------------------------------------------------------------------------------------------------------------------------
 2. In MySQL create the sample tables that will be used for the rest of the test
 a. In MySQL, create a database and name it “test”
+
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-a.create_db_test.PNG?raw=true)
 
 b. Create 2 tables in the test databases: authors and posts.
