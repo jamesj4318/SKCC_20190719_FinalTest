@@ -89,6 +89,39 @@ iv. In you cluster, create a user named “training” with password “training
 
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-c-iv.create_user_training.PNG?raw=true)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+2. In MySQL create the sample tables that will be used for the rest of the test
+a. In MySQL, create a database and name it “test”
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-a.create_db_test.PNG?raw=true)
+
+b. Create 2 tables in the test databases: authors and posts.
+i. You will use the authors.sql and posts.sql script files that will be provided for you to generate the necessary tables
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-b.create_2_tables.PNG?raw=true)
+
+c. Create and grant user “training” with password “training” full access to the test database. (It is ok if you give training full access to the entire MySQL database)
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-c.1.PNG?raw=true)
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-c.2.PNG?raw=true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
