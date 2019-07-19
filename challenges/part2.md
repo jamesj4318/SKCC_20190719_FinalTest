@@ -250,17 +250,33 @@ Sample Output:
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### 10.
 
+### Instructions
 
+Your boss needs specialized reports using the billing data and is constantly asking for help to write SQL queries. Create a database view in the metastore so that your boss has customer and billing data joined.
 
+### Data Description
 
+The customer data exists in the customer metastore table in the problem10 database.
+The billing data exists in the billing metastore table in the problem10 database. The id column is a foreign key into which customer has the charge.
 
+Create New View:
 
+```
+CREATE VIEW solution AS
+SELECT C.id AS id,
+       C.fname AS fname,
+       C.lname AS lname,
+       C.state AS state,
+       C.zip AS zipcode,
+       B.charge AS charge,
+       substr(B.tstamp,1,10) AS billdate
+  FROM customer C
+  JOIN billing B
+    ON C.id = B.id;
+```
 
+Output:
 
-
-
-
-
-
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-10-result.PNG?raw=true)
 
 
