@@ -26,6 +26,8 @@ for this)
 172.31.37.200	nd4.ys.com	nd4
 172.31.46.127	nd5.ys.com	nd5
 ```
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-ii.Instances.PNG?raw=true)
+
 
 iii. List the Linux release you are using
 ```
