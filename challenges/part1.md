@@ -70,25 +70,23 @@ database server
 ----------------------------------------------------------------------------------------------------------------------------------------
 c. Install Cloudera Manager
 
-i. Specifically, you MUST install CDH version 5.15.2 You will lose points if
-you install any other version of CDH.
+i. Specifically, you MUST install CDH version 5.15.2 You will lose points if you install any other version of CDH.
 
 ii. The Cluster does not have to be in HA mode.
 
-iii. Make sure that the following services (and any necessary services to
-install that service) are installed:
+iii. Make sure that the following services (and any necessary services to install that service) are installed:
 1. HDFS
 2. YARN
 3. Sqoop
 4. Hive
 5. Impala
 6. HUE
+
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-c-iii.makesure_services.PNG?raw=true)
 
 iv. In you cluster, create a user named “training” with password “training”
-1. You should have already created the linux user from previous
-step. Now, make sure user “training” has both a linux and HDFS
-home directory
+1. You should have already created the linux user from previous step. Now, make sure user “training” has both a linux and HDFS home directory
+
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-c-iv.create_user_training.PNG?raw=true)
 
 
