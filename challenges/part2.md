@@ -147,8 +147,56 @@ SELECT id, fname, lname, address, city, state, zip, substring(birthday, 7 ,10)
   FROM problem6.employee
 ```
 
+Sample Output:
+
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-6-result.PNG?raw=true)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+### 7.
+
+### Instructions
+
+Generate a report that contains all of the Seattle employee names in sorted order.
+
+### Data Description
+
+The employee records are stored in the employee table in the problem7 database.
+
+```
+SELECT CONCAT(lname, ', ' , fname) AS name
+  FROM employee
+ WHERE city = 'Seattle'
+ ORDER BY name
+```
+
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-7-result.PNG?raw=true)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+### 8.
+
+### Instructions
+
+Use Sqoop to export customer data from HDFS into a MySQL database table. Place the data in the solution table in MySQL, which has been created and is currently empty.
+
+### Data Description
+
+The data files are in the HDFS directory /user/training/problem8/data/customer/.
+MySQL database information:
+ Installation: localhost
+ Database name: problem8
+ Table name: solution
+ Username: cloudera
+ Password: cloudera
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+### 9.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+### 10.
 
 
 
