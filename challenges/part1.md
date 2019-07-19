@@ -90,7 +90,7 @@ iv. In you cluster, create a user named “training” with password “training
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-c-iv.create_user_training.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-2. In MySQL create the sample tables that will be used for the rest of the test
+### 2. In MySQL create the sample tables that will be used for the rest of the test
 a. In MySQL, create a database and name it “test”
 
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-a.create_db_test.PNG?raw=true)
@@ -104,7 +104,7 @@ c. Create and grant user “training” with password “training” full access
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-c.2.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-3. Extract tables authors and posts from the database and create Hive tables.
+### 3. Extract tables authors and posts from the database and create Hive tables.
 
 a. Use Sqoop to import the data from authors and posts
 
@@ -135,14 +135,14 @@ sqoop import --connect jdbc:mysql://172.31.40.88/test --username training --pass
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/3-2.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-4. Create and run a Hive/Impala query. From the query, generate the results dataset that you will use in the next step to export in MySQL.
+### 4. Create and run a Hive/Impala query. From the query, generate the results dataset that you will use in the next step to export in MySQL.
 
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/4-1.PNG?raw=true)
 
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/4-2.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-5. Export the data from above query to MySQL
+### 5. Export the data from above query to MySQL
 
 a. Create a MySQL table and name it “results”
 
