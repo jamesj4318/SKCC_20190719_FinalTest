@@ -137,6 +137,25 @@ sqoop import --connect jdbc:mysql://172.31.40.88/test --username training --pass
 ----------------------------------------------------------------------------------------------------------------------------------------
 4. Create and run a Hive/Impala query. From the query, generate the results dataset that you will use in the next step to export in MySQL.
 
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/4-1.PNG?raw=true)
+
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/4-2.PNG?raw=true)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+5. Export the data from above query to MySQL
+
+a. Create a MySQL table and name it “results”
+
+i. Make sure it has the necessary columns of matching type as the results of
+your query from above
+
+b. The table should be created under the database “test”
+
+c. Finally, export into MySQL the results of your query
+
+
+
+
 
 
 
