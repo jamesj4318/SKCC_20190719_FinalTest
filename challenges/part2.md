@@ -181,11 +181,17 @@ Use Sqoop to export customer data from HDFS into a MySQL database table. Place t
 ### Data Description
 
 The data files are in the HDFS directory /user/training/problem8/data/customer/.
+
 MySQL database information:
+
  Installation: localhost
+
  Database name: problem8
+
  Table name: solution
+
  Username: cloudera
+
  Password: cloudera
 
 
