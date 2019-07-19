@@ -103,7 +103,24 @@ c. Create and grant user “training” with password “training” full access
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-c.1.PNG?raw=true)
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/2-c.2.PNG?raw=true)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+3. Extract tables authors and posts from the database and create Hive tables.
+a. Use Sqoop to import the data from authors and posts
 
+b. For both tables, you will import the data in tab delimited text format
+
+c. The imported data should be saved in training’s HDFS home directory
+i. Create authors and posts directories in your HDFS home directory
+ii. Save the imported data in each
+
+d. In Hive, create 2 tables: authors and posts. They will contain the data that you
+imported from Sqoop in above step.
+
+e. You are free to use whatever database in Hive.
+
+f. Create authors as an external table.
+
+g. Create posts as a managed table.
 
 
 
