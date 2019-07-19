@@ -40,19 +40,55 @@ Create an employee table in the metastore that contains the employee records sto
 All of the employee records are stored in the /user/training/problem2/data/employee/ HDFS directory in Parquet file format.
 The files contain the following columns and types:
 
+```
+CREATE DATABASE problem2;
+```
 
+```
+CREATE EXTERNAL TABLE solution
+(
+    id INT,
+    fname STRING,
+    lname STRING,
+    address STRING,
+    city STRING,
+    state STRING,
+    zip STRING,
+    birthday STRING,
+    hireday STRING
+)
+    STORED AS PARQUET
+    LOCATION '/user/training/problem2/data/employee'
+```
 
-
-
-
-
-
-
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-2.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+### 3.
 
+### Instructions
 
+Generate a table that contains all customers who have positive account balances.
 
+### Data Description
+
+The customer records are stored in the customer table in the problem3 database. The account records are stored in the account table in the problem3 database. The account records contain a field called amount that may be negative. The custid field is a foreign key into the customer table.
+
+```
+CREATE TABLE solution3 AS
+SELECT C.id, C.fname, C.lname, C.hphone
+  FROM CUSTOMER C
+  JOIN ACCOUNT A
+    ON C.id = A.custid
+ WHERE A.amount > 0;
+```
+
+Sample Output:
+
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-3.PNG?raw=true)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+### 4.
 
 
 
