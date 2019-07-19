@@ -8,6 +8,13 @@ i. Add the following linux accounts to all nodes
 2. Set the password for user “training” to “training”
 3. Create the group skcc and add training to it
 4. Give training sudo capabilities
+```
+$ sudo useradd training -u 3800
+$ sudo passwd training
+$ sudo groupadd skcc
+$ sudo usermod -a -G skcc training
+```
+
 ii. List the your instances by IP address and DNS name (don’t use /etc/hosts
 for this)
 iii. List the Linux release you are using
