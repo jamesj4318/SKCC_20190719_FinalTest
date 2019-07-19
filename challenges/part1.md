@@ -19,8 +19,19 @@ $ sudo usermod -a -G skcc training
 
 ii. List the your instances by IP address and DNS name (don’t use /etc/hosts
 for this)
+```
+172.31.40.88	nd1.ys.com	nd1
+172.31.39.123	nd2.ys.com	nd2
+172.31.34.251	nd3.ys.com	nd3
+172.31.37.200	nd4.ys.com	nd4
+172.31.46.127	nd5.ys.com	nd5
+```
 
 iii. List the Linux release you are using
+```
+$ cat /etc/redhat-release
+```
+
 
 iv. List the file system capacity for the first node (master node)
 
