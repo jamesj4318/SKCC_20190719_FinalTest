@@ -124,6 +124,42 @@ SELECT E.fname, E.lname, E.city, E.state
 
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-5.PNG?raw=true)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+### 6.
+
+### Instructions
+
+There are privacy concerns about the employee data that is stored on the cluster. Your task is to remove part of the age information from the employee data by creating a new table for the data analysts to query against.
+
+### Data Description
+All of the employee records are stored in the employee metastore table in the problem6 database.
+
+Create Table solutoin:
+
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-6-1.PNG?raw=true)
+
+Change Column Name:
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-6-2.PNG?raw=true)
+
+```
+INSERT INTO TABLE problem6.solution
+SELECT id, fname, lname, address, city, state, zip, substring(birthday, 7 ,10)
+  FROM problem6.employee
+```
+
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/part2-6-result.PNG?raw=true)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
