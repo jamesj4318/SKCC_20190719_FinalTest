@@ -61,9 +61,11 @@ access them.
 ii. List the following in your GitHub
 1. A command and output that shows the hostname of your
 database server
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-b-ii-1.hostname.PNG?raw=true)
 2. A command and output that reports the database server version
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-b-ii-2.dbserver_version.PNG?raw=true)
 3. A command and output that lists all the databases in the server
-
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-b-ii-3.lists_all.PNG?raw=true)
 
 
 
