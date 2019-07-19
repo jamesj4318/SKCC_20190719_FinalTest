@@ -51,7 +51,18 @@ viii. List output of the flowing commands:
 2. getent passwd training
 ![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/1-a-viii.getent.PNG?raw=true)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+b. Install a MySQl server
 
+i. Use MariaDB as the database for all the services. You may choose your
+own username and passwords but make a record of it so that we may
+access them.
+
+ii. List the following in your GitHub
+1. A command and output that shows the hostname of your
+database server
+2. A command and output that reports the database server version
+3. A command and output that lists all the databases in the server
 
 
 
