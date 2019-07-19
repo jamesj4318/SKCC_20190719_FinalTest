@@ -124,24 +124,18 @@ e. You are free to use whatever database in Hive.
 f. Create authors as an external table.
 
 g. Create posts as a managed table.
+'''
+sqoop import --connect jdbc:mysql://172.31.40.88/test --username training --password training --table authors --target-dir /user/hive/warehouse/authors --hive-import --create-hive-table --hive-table default.authors
+'''
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/3-1.PNG?raw=true)
 
+'''
+sqoop import --connect jdbc:mysql://172.31.40.88/test --username training --password training --table posts --target-dir /user/hive/warehouse/posts --hive-import --create-hive-table --hive-table default.posts
+'''
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/3-2.PNG?raw=true)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------
+4. Create and run a Hive/Impala query. From the query, generate the results dataset that you will use in the next step to export in MySQL.
 
 
 
