@@ -151,13 +151,18 @@ your query from above
 
 b. The table should be created under the database “test”
 
+![photo.PNG](https://github.com/jamesj4318/SKCC_20190719_FinalTest/blob/master/challenges/images/5-1.PNG?raw=true)
+
+
 c. Finally, export into MySQL the results of your query
+```
+sqoop export \
+--connect jdbc:mysql://localhost/test \
+--username training \
+--password training \
+--table results \
+--export-dir /user/hive/warehouse/results \
+--input-fields-terminated-by '\t'
+```
 
-
-
-
-
-
-
-
-
+-- end of doc --
